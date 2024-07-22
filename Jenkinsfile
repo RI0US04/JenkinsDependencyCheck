@@ -3,7 +3,7 @@ pipeline {
 	stages {
 	    stage('Checkout') {
             steps {
-                 git url: 'https://github.com/RI0US04/JenkinsDependencyCheckTest.git', credentialsId: 'GitHub-PAT'
+                 git url: 'https://github.com/RI0US04/Lab06-JenkinsDependencyCheck.git', credentialsId: 'GitHub-PAT'
             }
         }
 		stage('OWASP DependencyCheck') {
