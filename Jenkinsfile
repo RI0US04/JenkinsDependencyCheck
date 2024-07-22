@@ -3,7 +3,7 @@ pipeline {
 	stages {
 	    stage('Checkout') {
             steps {
-                 checkout changelog: false, poll: false, scm: scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'Github-Acc', url: 'https://github.com/RI0US04/Lab06-JenkinsDependencyCheck.git']])
+                 checkout changelog: false, poll: false, scm: scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'Github-Acc', url: 'https://github.com/RI0US04/JenkinsDependencyCheck.git']])
             }
         }
 		stage('OWASP DependencyCheck') {
